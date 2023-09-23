@@ -8,7 +8,6 @@ tmp
 
 
 
-
 import subprocess
 import os
 
@@ -25,6 +24,6 @@ run_cmd('git merge xy')
 run_cmd('git reset main')
 
 for ignore in merge_ignores:
-    run_cmd(f'git reset -- "{Path(ignore).quote}"')
+    run_cmd(f'git reset -- {Path(ignore).quote}')
 
 
