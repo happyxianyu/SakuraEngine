@@ -1,0 +1,11 @@
+在github上将main和源仓库同步
+本地执行以下命令:
+git checkout main
+git pull
+git checkout xy
+git merge main
+然后开始开发，开发结束后运行git_merge，merge到xy-main，merge完成后，
+git push
+然后再github上提交PR，xy-main -> main
+
+
