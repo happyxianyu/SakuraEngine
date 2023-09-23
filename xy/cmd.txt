@@ -1,0 +1,18 @@
+
+xmake l setup.lua
+
+--vs_sdkver=10.0.19041.0
+
+xmake f --build_cgpu_samples=true --build_rg_samples=true -c -m debug
+
+
+xmake b CGPUMandelbrot
+xmake b CGPUIndexedInstance
+xmake b CGPUTexture
+xmake b CGPUTiledTexture
+
+
+VK_KHR_fragment_shading_rate
+
+xmake
+
